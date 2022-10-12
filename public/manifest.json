@@ -1,0 +1,25 @@
+{
+  "short_name": "Ziaul Karim",
+  "name": "Portfolio of Md. Ziaul Karim",
+  "icons": [
+    {
+      "src": "zk.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "zk.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "zk.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#DB8962",
+  "background_color": "#272829"
+}
