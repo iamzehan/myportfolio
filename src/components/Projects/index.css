@@ -1,0 +1,134 @@
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #e9ecef;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #DB8962;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #272829;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 0 24px 0 rgba(0,0,0, 0.15);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3)!important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  width: 150px;
+}
+.portfolio .portfolio-wrap::before{
+  height: 150px;
+  width: 150px;
+}
+.portfolio .portfolio-wrap img{
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #DB8962;
+  font-size: 20px;
+  text-align: center;
+  background: black;
+  transition: 0.3s;
+  width: 50%;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  background: #e9ecef;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a + a {
+  border-left: 1px solid black;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+  bottom: 0;
+}
+
+@media only screen and (max-width:400px){
+  .portfolio #portfolio-flters {
+    padding: 0;
+    margin: inherit;
+    list-style: none;
+    text-align: center;
+    background: #e9ecef;
+    border-radius: 50px;
+    padding: 2px 15px;
+  }
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #DB8962;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+}
